@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/build.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav-main">
+        <div class="nav-container container grid">
+            <a href="index.html"><img class="logo" src="logo.png"></a>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="index.html" class="nav-link link-animate">Home</a></li>
+                <li class="nav-item"><a href="build.html" class="nav-link link-animate">Build</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link link-animate">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main arrow arrow-darker">
+        <div class="container">
+            <div class="main-content build">
+                <h1 class="main-title highlight-text">Build</h1>
+                <canvas id="preview" class="build-panel"></canvas>
+                <div id="options" class="build-panel">
+                    <div id="options-effect" class="options-set">
+                        <h2 class="options-title">Sound Effect</h2>
+                        <label class="options-label">
+                            <input name="options-effect" class="option" id="effect-1" type="radio" value="distortion">
+                            <div class="options-img">
+                                <img src="IMG_0013.PNG" alt="">
+                            </div>
+                        </label>
+                        <label class="options-label">
+                            <input name="options-effect" class="option" id="effect-2" type="radio" value="squeezer">
+                            <div class="options-img">
+                                <img src="IMG_0013.PNG" alt="">
+                            </div>
+                        </label>
+                        <label class="options-label">
+                            <input name="options-effect" class="option" id="effect-3" type="radio" value="tremolo">
+                            <div class="options-img">
+                                <img src="IMG_0013.PNG" alt="">
+                            </div>
+                        </label>
+                        <label class="options-label">
+                            <input name="options-effect" class="option" id="effect-4" type="radio" value="fuzz">
+                            <div class="options-img">
+                                <img src="IMG_0013.PNG" alt="">
+                            </div>
+                        </label>
+                        <label class="options-label">
+                            <input name="options-effect" class="option" id="effect-5" type="radio" value="shocktave">
+                            <div class="options-img">
+                                <img src="IMG_0013.PNG" alt="">
+                            </div>
+                        </label>
+                        <p class="options-text">Please pick an effect first. This will determine the amount of knobs
+                            required and minimum
+                            body size.
+                        </p>
+                    </div>
+                    <div id="options-box" class="options-set">
+                        <h2 class="options-title">Box Type</h2>
+                        <label class="options-label">
+                            <input name="options-box" class="option" id="box-1" type="radio" value="1" disabled>
+                            <div class="options-img">
+                                <img src="IMG_0013.PNG" alt="">
+                            </div>
+                        </label>
+                        <label class="options-label">
+                            <input name="options-box" class="option" id="box-2" type="radio" value="2" disabled>
+                            <div class="options-img">
+                                <img src="IMG_0013.PNG" alt="">
+                            </div>
+                        </label>
+                        <label class="options-label">
+                            <input name="options-box" class="option" id="box-3" type="radio" value="3" disabled>
+                            <div class="options-img">
+                                <img src="IMG_0013.PNG" alt="">
+                            </div>
+                        </label>
+                        <p class="options-text"></p>
+                    </div>
+                    <div id="options-knobtype" class="options-set">
+                        <h2 class="options-title">Knob type</h2>
+                        <label class="options-label">
+                            <input name="options-knobtype" class="option" id="knobtype-1" type="radio" value="1"
+                                disabled>
+                            <div class="options-img">
+                                <img src="IMG_0013.PNG" alt="">
+                            </div>
+                        </label>
+                        <label class="options-label">
+                            <input name="options-knobtype" class="option" id="knobtype-2" type="radio" value="2"
+                                disabled>
+                            <div class="options-img">
+                                <img src="IMG_0013.PNG" alt="">
+                            </div>
+                        </label>
+                        <label class="options-label">
+                            <input name="options-knobtype" class="option" id="knobtype-3" type="radio" value="3"
+                                disabled>
+                            <div class="options-img">
+                                <img src="IMG_0013.PNG" alt="">
+                            </div>
+                        </label>
+                    </div>
+                    <div id="options-color" class="options-set">
+                        <h2 class="options-title">Body Color</h2>
+                        <input name="options-color" class="option" id="color" type="color" value="#2E0505" disabled>
+                    </div>
+                    <div id="options-design" class="options-set">
+                        <h2 class="options-title">Design</h2>
+                        <label class="options-label">
+                            <input name="options-design" class="option" id="design-1" type="radio" value="1" disabled>
+                            <div class="options-img">
+                                <img src="IMG_0013.PNG" alt="">
+                            </div>
+                        </label>
+                        <label class="options-label">
+                            <input name="options-design" class="option" id="design-2" type="radio" value="2" disabled>
+                            <div class="options-img">
+                                <img src="IMG_0013.PNG" alt="">
+                            </div>
+                        </label>
+                        <label class="options-label">
+                            <input name="options-design" class="option" id="design-3" type="radio" value="3" disabled>
+                            <div class="options-img">
+                                <img src="IMG_0013.PNG" alt="">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="grid container footer-container">
+            <div class="footer-col">
+                <h3 class="footer-title">Footer stuff</h3>
+                <p class="footer-text">goes here</p>
+                <p class="footer-text">goes here</p>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">Footer stuff</h3>
+                <p class="footer-text">goes here</p>
+                <p class="footer-text">goes here</p>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">Footer stuff</h3>
+                <p class="footer-text">goes here</p>
+                <p class="footer-text">goes here</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="javascript/options.js"></script>
+    <script type="module" src="javascript/build.js"></script>
+</body>
+
+</html>
